@@ -6,6 +6,7 @@ phases:
   install:
     commands:
       - npm install time
+      - echo BUCKET_NAME is $BUCKET_NAME
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket $BUCKET_NAME --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
