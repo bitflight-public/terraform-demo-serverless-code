@@ -16,5 +16,5 @@ Resources:
             Method: GET
 Outputs:
     ApiURL:
-      Description: "API endpoint URL for Prod environment"
+      Description: "API endpoint URL for Prod hi environment"
       Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/TimeResource"
